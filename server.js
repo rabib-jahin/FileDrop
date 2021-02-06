@@ -9,12 +9,12 @@ app.use(express.static('public'))
 app.use(express.json())
 const connectDB=require('./config/db');
 connectDB();
-
+/*
 const corsOptions={
 
     origin:process.env.ALLOWED.split(',')
-}
-app.use(cors(corsOptions))
+}*/
+//app.use(cors(corsOptions))
 app.set('views',path.join(__dirname,'/views'))
 app.set('view engine','ejs')
 
